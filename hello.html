@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let counter = 0;
+    function count(){
+        counter++;
+        document.getElementById("#Increment").innerHTML = counter;
+    }
+    document.addEventListener("DOMContentLoaded" ,function(){
+        document.getElementById("#clickBtn").onclick=count;
+    })
+</script>
+<body>
+    <div>
+        <h1 id="Increment">0</h1>
+        <button id="clickBtn">Click Here</button>
+    </div>
+    <style>
+        body{
+            background-image:linear-gradient( to right, white,gray);
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        div{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+    </style>
+</body>
+</html>
